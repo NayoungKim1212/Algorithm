@@ -6,6 +6,6 @@ class Solution {
             n = n / 3;
             three += String.valueOf(num);
         }
-        return Integer.parseInt(three,3);
+        return Integer.parseInt(three,3); // 10진수를 3진수로 변환
     }
 }
