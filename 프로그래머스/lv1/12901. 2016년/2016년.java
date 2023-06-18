@@ -1,5 +1,4 @@
-import java.time.DayOfWeek;
-import java.time.LocalDate;
+
 class Solution {
     public String solution(int a, int b) {
             String answer = "";
