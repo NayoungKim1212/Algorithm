@@ -1,10 +1,28 @@
+import java.util.Arrays;
 class Solution {
      public static int solution(int[] numbers) {
-        int answer = 0;
-        
-        for (int i = 0; i < numbers.length; i++) { // 0부터 number의 길이만큼 for문을 사용해 반복 출력
-            answer += numbers[i]; // 출력해서 나온 값을 다 더한 후 answer에 저장
+                 int answer = 0;
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
         }
-        return 45 -answer; // 
+        answer = 45 - sum;
+        return answer;
+//         int answer = 0;
+//         boolean[] flag = new boolean[10];
+//         Arrays.fill(flag, false);
+
+//         for(int i = 0; i <= 9; i++){
+//             for(int j : numbers){
+//                 if(i == j)
+//                     flag[i] = true;
+//             }
+//         }
+
+//         for(int i = 0; i < flag.length; i++){
+//             if(flag[i] == false)
+//                 answer += i;
+//         }
+//         return answer;
     }
 }
